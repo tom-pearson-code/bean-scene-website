@@ -19,13 +19,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 90px;
   background-color: #2f332d;
 }
 
 .title-link {
   width: 25%;
-  font-size: clamp(5px, 2vw, 25px);
+  font-size: 35px;
+  font-size: clamp(10px, 2vw, 35px);
   display: flex;
   justify-content: center;
   text-decoration: none;
@@ -45,8 +46,8 @@ header {
 }
 
 .header-nav-link {
-  font-size: 25px;
-  font-size: clamp(5px, 2vw, 25px);
+  font-size: 35px;
+  font-size: clamp(10px, 2vw, 35px);
   text-decoration: none;
   color: #c1730e;
 }
@@ -60,7 +61,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  height: 90px;
   background-color: #2f332d;
 }
 
