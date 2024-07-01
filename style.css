@@ -89,12 +89,12 @@ main {
 }
 
 .gallery-img-div {
-  /* width: 100%;
+  width: 75%;
   display: flex;
+  padding-bottom: 20px;
+  /* border: 1px solid blue; */
   justify-content: space-evenly;
   align-items: center;
-  padding-bottom: 20px; */
-  /* border: 1px solid blue; */
   display: flex;
   align-items: stretch;
 }
@@ -102,16 +102,17 @@ main {
 .img-wrapper {
   flex: 1;
   display: flex;
+  justify-content: space-evenly;
 }
 
 .gallery-img-div-img {
-  width: 100%;
+  width: 90%;
   height: 100%;
   object-fit: cover;
 }
 
 .gallery-p-div {
-  width: 100%;
+  width: 75%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -124,6 +125,10 @@ main {
   font-size: clamp(20px, 4vw, 25px);
   color: #c4beb5;
   padding-bottom: 20px;
+  display: flex;
+  padding-bottom: 20px;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .main-heading {
@@ -161,17 +166,17 @@ main {
 /* Anything too large */
 @media screen and (min-width: 1800px) {
   img {
-    max-width: 1024px;
+    max-width: 1500px;
   }
   .main-p, .gallery-p-div-p  {
-    width: 1024px;
+    width: 1500px;
     font-size: 30px;
   }
 }
 
 /* Large tablets and smaller */
 @media screen and (max-width: 1024px) {
-  img, .main-img-div {
+  img, .main-img-div .gallery-img-div {
     max-height: 350px;
     object-fit: contain;
   }
@@ -179,7 +184,7 @@ main {
 
 /* Tablets and smaller */
 @media screen and (max-width: 768px) {
-  img, .main-img-div {
+  img, .main-img-div .gallery-img-div {
     max-height: 384px;
     object-fit: contain;
   }
@@ -193,7 +198,7 @@ main {
 /* Large phones and smaller */
 @media screen and (max-width: 600px) {
   img, .main-img-div {
-    max-height: 384px;
+    max-height: 300px;
     object-fit: contain;
   }.main-p, .gallery-p-div-p {
     font-size: 15px;
